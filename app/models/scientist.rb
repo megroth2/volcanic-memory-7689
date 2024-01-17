@@ -11,7 +11,7 @@ class Scientist < ApplicationRecord
     # binding.pry
   end
 
-  def active_scientist_experiment_names
-    Experiment.joins(:scientist_experiments).where(scientist_experiments: { scientist_id: id, active: true }).pluck(:name)
-  end
+  # def active_scientist_experiment_names
+  #   Experiment.joins(:scientist_experiments).where(scientist_experiments: { scientist_id: id, active: true }).pluck(:name)
+  # end
 end

@@ -57,7 +57,7 @@ RSpec.describe "the scientist show page" do
         click_button("Remove")
       end
       
-      expect(current_path).to eq(scientist_path(@scientist_1))
+      expect(current_path).to eq("/scientists/#{@scientist_1.id}")
 
       within('table') do
         expect(page).to_not have_content(@experiment_1.name)

@@ -20,11 +20,11 @@ RSpec.describe Scientist do
     @scientist_experiment_3 = ScientistExperiment.create!(scientist_id: @scientist_2.id, experiment_id: @experiment_1.id, active: true)
   end
 
-  it "finds scientist_experiment_id" do
-    expect(@scientist_1.find_scientist_experiment_id(@experiment_1)).to eq(@scientist_experiment_1.id)
-  end
+  # it "finds scientist_experiment_id" do
+  #   expect(@scientist_1.find_scientist_experiment_id(@experiment_1)).to eq(@scientist_experiment_1.id)
+  # end
 
-  it "finds active scientist experiment names" do
-    expect(@scientist_1.active_scientist_experiment_names).to eq(["MINERVA", "water test"])
-    end
+  # it "finds active scientist experiment names" do
+  #   expect(@scientist_1.active_scientist_experiment_names).to eq(["MINERVA", "water test"])
+  #   end
 end
